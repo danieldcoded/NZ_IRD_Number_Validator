@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="NZ_IRD_Number_Validator",
-    version="0.0.1",
+    version="1.0.0",
     author="Daniel Cerezo Rodriguez",
     author_email="danielcerezo.dev@gmail.com",
     description="A validator python package for New Zealand tax numbers (IRD)",
