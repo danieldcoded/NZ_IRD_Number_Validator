@@ -7,21 +7,22 @@ A validator python package for New Zealand tax numbers (IRD)
 These instructions will get you a copy of the project up and 
 running on your local machine for development and testing purposes.
 
-if you would like to create your own package follow the following guide:
+if you would like to create your own package follow the guide below:
 * [Packaging project](https://packaging.python.org/tutorials/packaging-projects/)
 
 ### Installing
 
 ```
-pip install git+https://github.com/novahealth/nz_ird_validator.git
+pip install git+https://github.com/danielcerezodev/NZ_IRD_Number_Validator.git
 ```
 
 ### Usage
 
 ```
-import nz_ird_validator
+import NZ_IRD_Number_Validator as ird_validator
 
-is_ird_valid = nz_ird_validator.is_valid("123-456-789")
+# Check and store wether the IRD Number is valid or not
+is_ird_valid = ird_validator.is_valid("123-456-789")
 
 if is_ird_valid:
     print("IRD IS VALID")
