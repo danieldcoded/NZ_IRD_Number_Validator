@@ -12,7 +12,7 @@ def clean_ird(ird):
     return clean_ird_number
 
 
-def check_digit(ird, weight_factor):
+def __check_digit(ird, weight_factor):
 
     # For checking the IRD we will need
     PRIMARY_WEIGHTS = [3, 2, 7, 6, 5, 4, 3, 2]
@@ -22,7 +22,7 @@ def check_digit(ird, weight_factor):
 # This method will take the passed IRD
 # and use the official validation process
 # to determine whether the IRD is valid or invalid
-def is_valid(ird):
+def check_ird(ird):
 
     # Initialise the boolean variable that stores
     # whether the IRD tax number is valid or invalid
