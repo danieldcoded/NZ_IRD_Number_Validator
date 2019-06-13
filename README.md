@@ -21,13 +21,14 @@ pip install git+https://github.com/danielcerezodev/NZ_IRD_Number_Validator.git
 ```
 import NZ_IRD_Number_Validator as ird_validator
 
-# Check and store wether the IRD Number is valid or not
-is_ird_valid = ird_validator.is_valid("123-456-789")
+ird_number = "123-456-789"
 
-if is_ird_valid:
-    print("IRD IS VALID")
+is_ird_number_valid = ird_validator.check_ird(ird_number)
+
+if is_ird_number_valid:
+    print(ird_number + "is valid")
 else:
-    print("IRD IS NOT VALID")
+    print(ird_number + "is not valid")
 ```
 
 ## Built With
