@@ -65,7 +65,7 @@ The following steps are to be performed:
 
 ## Author
 
-* **Daniel Cerezo Rodriguez**
+* **Daniel Cerezo**
 
 ## License
 
