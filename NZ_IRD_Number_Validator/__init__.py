@@ -13,7 +13,7 @@ def clean_ird(ird):
         clean_ird_number = "0" + clean_ird_number
 
     # Returns the "clean" IRD number
-    return clean_ird_number
+    return str(clean_ird_number)
 
 
 # This method will calculate the check digit (trailing digit of the IRD number)
@@ -55,63 +55,34 @@ def is_valid(ird):
     # validating
     ird = clean_ird(ird)
 
-    # # Check that the ird is the correct length
-    # # and if it is in range
-    # if len(ird[:-1]) == 8 and 10000000 <= int(ird) <= 150000000:
-    #     check_digit = ird[8]
-    #     remainder = get_remainder(ird, 1)
-    #
-    #     # If remainder is 0 and the check digit (last digit of the IRD number) is 0
-    #     # then IRD number is valid
-    #     if remainder == 0 and check_digit == remainder:
-    #         return True
-    #     # If remainder is != 0, subtract it from 11
-    #     else:
-    #         remainder = 11 - remainder
-    #     # If 11 - remainder = check digit, then IRD number is valid
-    #     if 0 <= remainder <= 9 and remainder == check_digit:
-    #         return True
-    #
-    #     # if result is 10, recalculate weights using the secondary weight factor
-    #     elif remainder == 10:
-    #         # calc for each digit using the secondary weight factor
-    #         remainder = get_remainder(ird, 2)
-    #         # if remainder is 0 and check digit (last digit of the IRD number) is 0
-    #         # then IRD number is valid
-    #         if remainder == 0 and check_digit == 0:
-    #             return True
-    #         # if remainder is != 0, subtract it from 11
-    #         else:
-    #             remainder = 11 - int(remainder)
-    #             if remainder == check_digit:
-    #                 return True
+    # Check that the ird is the correct length
+    # and if it is in range
+    if len(ird[:-1]) == 8 and 10000000 <= int(ird) <= 150000000:
+        check_digit = int(ird[8])
+        remainder = get_remainder(ird, 1)
 
-    if len((str(ird)[:-1])) == 8:  # check to see if the IRD number has the correct length
-        if 10000000 <= int(ird) <= 150000000:  # check to see if the IRD number is in the correct range
-            check_digit = ird[8]
-            remainder = get_remainder(ird, 1)  # calc to get remainder using the first weight factor
-            # if remainder is 0 and check digit (last digit of the IRD number) is 0, then IRD number is valid
-            if int(remainder) == 0 and int(check_digit) == int(remainder):
+        # If remainder is 0 and the check digit (last digit of the IRD number) is 0
+        # then IRD number is valid
+        if remainder == 0 and check_digit == remainder:
+            return True
+        # If remainder is != 0, subtract it from 11
+        else:
+            remainder = 11 - remainder
+        # If 11 - remainder = check digit, then IRD number is valid
+        if 0 <= remainder <= 9 and remainder == check_digit:
+            return True
+
+        # if result is 10, recalculate weights using the secondary weight factor
+        elif remainder == 10:
+            # calc for each digit using the secondary weight factor
+            remainder = get_remainder(ird, 2)
+            # if remainder is 0 and check digit (last digit of the IRD number) is 0
+            # then IRD number is valid
+            if remainder == 0 and check_digit == 0:
                 return True
             # if remainder is != 0, subtract it from 11
-            elif int(remainder) != 0:
+            else:
                 remainder = 11 - int(remainder)
-                #  if result is between 0 and 9
-            if 0 <= int(remainder) <= 9 and int(remainder) == int(check_digit):
-                # if remainder = check digit, then IRD number is valid
-                return True
-            # if remainder is = 10, recalculate weights using the secondary weight factor
-            elif int(remainder) == 10:
-                # calc to get remainder using the secondary weight factor
-                remainder = get_remainder(ird, 2)
-                # if remainder is 0 and check digit (last digit of the IRD number) is 0, then IRD number is valid
-                if int(remainder) == 0 and int(check_digit) == 0:
+                if remainder == check_digit:
                     return True
-                # if remainder is != 0, subtract it from 11
-                elif int(remainder) != 0:
-                    remainder = 11 - int(remainder)
-                    # if remainder = check digit, then IRD number is valid
-                    if int(remainder) == int(check_digit):
-                        return True
-
     return False
