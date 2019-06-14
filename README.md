@@ -7,7 +7,7 @@ A validator python package for New Zealand tax numbers (IRD)
 These instructions will get you a copy of the project up and 
 running on your local machine for development and testing purposes.
 
-if you would like to create your own package follow the guide below:
+If you would like to create your own package follow the guide below:
 * [Packaging project](https://packaging.python.org/tutorials/packaging-projects/)
 
 ### Installing
