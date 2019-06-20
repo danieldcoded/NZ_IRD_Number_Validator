@@ -33,7 +33,7 @@ else:
 
 ### Check digit validation
 
-The following steps are to be performed:
+The following steps are performed:
 
 * Check the valid range
     * If the IRD number is < 10-000-000 or > 150-000-000 then the number is invalid. This step ensures that the IRD number is in the already issued range, or is in the range expected to be issued in the next 10 years.
