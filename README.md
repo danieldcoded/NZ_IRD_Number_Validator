@@ -31,7 +31,7 @@ else:
     print(ird_number + " is not valid")
 ```
 
-### Check digit validation
+### How the validation is done
 
 The following steps are performed:
 
