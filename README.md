@@ -1,4 +1,4 @@
-# NZ IRD NUMBER VALIDATOR PYTHON PACKAGE
+# NZ IRD NUMBER VALIDATOR
 
 A validator python package for New Zealand tax numbers (IRD)
 
