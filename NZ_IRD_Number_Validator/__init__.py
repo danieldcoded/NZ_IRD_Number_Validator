@@ -34,9 +34,6 @@ def get_remainder(ird, weight_factor):
     # Convert the IRD number into a list of integers
     ird_list = list(map(int, ird[:-1]))
 
-    print(ird_list)
-    print(weights)
-
     # Multiply each weight factor to their corresponding IRD digit
     result = map(lambda x, y: x * y, ird_list, weights)
 
