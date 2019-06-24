@@ -1,4 +1,4 @@
-# NZ IRD NUMBER VALIDATOR PYTHON PACKAGE
+# Inland Revenue Department Number Validator
 
 A validator python package for New Zealand tax numbers (IRD)
 
@@ -10,13 +10,13 @@ running on your local machine for development and testing purposes.
 If you would like to create your own package follow the guide below:
 * [Packaging project](https://packaging.python.org/tutorials/packaging-projects/)
 
-### Installing
+## Installing
 
 ```
 pip install git+https://github.com/danielcerezodev/NZ_IRD_Number_Validator.git
 ```
 
-### Usage
+## Usage
 
 ```
 from NZ_IRD_Number_Validator import is_valid
@@ -31,7 +31,7 @@ else:
     print(ird_number + " is not valid")
 ```
 
-### How the validation is done
+## How the validation is done
 
 The following steps are performed:
 
