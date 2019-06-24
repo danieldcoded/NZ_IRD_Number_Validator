@@ -73,4 +73,4 @@ Pull requests are welcome.
 
 ## License
 
-This project is licensed under the GNU License - see the [LICENSE.md](https://github.com/danielcerezodev/NZ_IRD_Number_Validator/blob/master/LICENSE.md) file for details
+This project is licensed under the GNU License - see the [LICENSE.md](https://github.com/danielcerezodev/NZ_IRD_Number_Validator/blob/master/LICENSE.md) file for details.
