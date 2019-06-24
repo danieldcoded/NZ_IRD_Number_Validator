@@ -63,9 +63,9 @@ The following steps are performed:
 
 ## [Changelog](https://github.com/danielcerezodev/NZ_IRD_Number_Validator/blob/master/CHANGELOG.md)
 
-## Author
+## Authors
 
-* **Daniel Cerezo**
+* [**Daniel Cerezo**](https://github.com/danielcerezodev)
 
 ## License
 
