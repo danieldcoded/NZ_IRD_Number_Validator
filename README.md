@@ -63,10 +63,14 @@ The following steps are performed:
 
 ## [Changelog](https://github.com/danielcerezodev/NZ_IRD_Number_Validator/blob/master/CHANGELOG.md)
 
+## Contributing
+
+Pull requests are welcome.
+
 ## Authors
 
 * [**Daniel Cerezo**](https://github.com/danielcerezodev)
 
 ## License
 
-This project is licensed under the GNU License - see the [LICENSE.md](https://github.com/danielcerezodev/NZ_IRD_Number_Validator/blob/master/LICENSE.md) file for details
+This project is licensed under the GNU License - see the [LICENSE.md](https://github.com/danielcerezodev/NZ_IRD_Number_Validator/blob/master/LICENSE.md) file for details.
