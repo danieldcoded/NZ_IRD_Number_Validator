@@ -6,10 +6,10 @@ import re
 # preceding 0 if the number has 8 characters
 def clean_ird(ird):
     # Use regex to remove all non-numeric characters
-    clean_ird_number = re.sub('[^0-9]', '', ird)
+    clean_ird_number = re.sub('[^0-9]+', '', ird)
 
     # add preceding 0 if IRD has 8 digits
-    if len(clean_ird_number) < 9:
+    if 7 < len(clean_ird_number) < 9:
         clean_ird_number = "0" + clean_ird_number
 
     # Returns the "clean" IRD number
